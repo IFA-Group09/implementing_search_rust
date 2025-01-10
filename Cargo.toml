@@ -1,0 +1,17 @@
+[package]
+name = "implementing_search_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bio = "1"
+clap = { version = "4.5.26", features = ["derive"] }
+flate2 = "1.0"
+
+[[bin]]
+name = "naive_search"
+path = "src/naive_search.rs"
+
+[[bin]]
+name = "sa_search"
+path = "src/sa_search.rs"
